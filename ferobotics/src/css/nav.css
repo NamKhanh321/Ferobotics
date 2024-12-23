@@ -1,0 +1,148 @@
+nav {
+    padding: 30px 110px;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+.nav-logo ul {
+    display: flex;
+    
+}
+.nav-logo ul a{
+    color: black;
+}
+.nav-logo ul a:hover{
+    color: #fdbac8;
+}
+.login{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.login a {
+    color: black;
+}
+
+.login a:hover {
+    color: #fdbac8;
+}
+.shop-inf{
+    width: 10%;
+
+}
+.shop-inf ul{
+    justify-content: end;
+}
+.shop-inf ul li {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.nav-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+
+}
+.links li{
+    width: 20%;
+    text-align: center;
+}
+.links li a {
+    color: black;
+}
+
+.links li a:hover {
+    color: #fdbac8;
+}
+
+.shop-inf ul li:hover {
+    color: #fdbac8;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Side navigation links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* On hover, change color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Button to open the side menu */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+
+    color: black;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid #fac4cf;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 50%;
+}
+
+/* Change the background color when hovered over the open button */
+.openbtn:hover {
+    background-color: #fac4cf;
+    color: white;
+}

@@ -1,0 +1,43 @@
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    z-index: 1000;
+    background: linear-gradient(to top, #d3d3d3, #a9a9a9); /* Màu xám nhạt */
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #d3d3d3, #a9a9a9); /* Màu xám nhạt */
+    filter: blur(3px);
+}
+
+#progressbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #d3d3d3, #a9a9a9); /* Màu xám nhạt */
+    filter: blur(5px);
+}

@@ -1,0 +1,42 @@
+footer{
+    width: 100%;
+    bottom: 0;
+    
+}
+footer h2{
+    letter-spacing: 0.3rem;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 100px;
+    background-color: #272829;
+    color: white;
+}
+.footer-content{
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer-content::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: white;
+    top:-10px;
+}
+.footer-content p {
+    text-align: start;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #999999;
+}
+.footer-content p i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.all-right{
+    text-align: center;
+    padding: 5px;
+}
