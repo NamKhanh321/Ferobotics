@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Email = $_POST['email'];
     $pass = $_POST['password'];
     
-    $sql = "INSERT INTO account VALUE('$Email','$firstName','$lastName','$pass')";
+    $sql = "INSERT INTO account VALUES('$Email','$firstName','$lastName','$pass')";
     var_dump($sql);
     $stmt = $con->prepare($sql);
     $query = $stmt->execute();
