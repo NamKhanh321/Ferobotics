@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8e693c2f-6667-4b67-893b-f112dd77293f/resourceGroups/Ferobotics_group-8c01/providers/Microsoft.Web/sites/Ferobotics",
+    "appService.deploySubpath": "."
+}
