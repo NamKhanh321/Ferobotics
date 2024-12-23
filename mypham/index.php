@@ -3,25 +3,45 @@ $con = mysqli_init();
 mysqli_ssl_set($con,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
 mysqli_real_connect($con, "mypham-server.mysql.database.azure.com", "gkphkwttoo", "Nam123456", "mypham",3306,NULL,MYSQLI_CLIENT_SSL);
 
-if ($con->connect_error) {
-    echo "Ket noi that bai";
-    die("Connection failed: " . $con->connect_error);
-  }
-else {
-    echo "Ket noi thanh cong";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $Email = $_POST['Email'];
+    $pass = $_POST['password'];
+    
+    $sql = "INSERT INTO account VALUE('$Email','$firstName','$lastName','$pass')";
+    var_dump($sql);
+    $stmt = $conn->prepare($sql);
+    $query = $stmt->execute();
+    $message_success = "da tao tai khoan thanh cong!";
+    $message_fail = "co loi xay ra!";
+    if($query){
+        echo "<script type='text/javascript'>alert('$message_success');</script>";
+    }
+    else{
+        echo "<script type='text/javascript'>alert('$message_fail');</script>";
+    }
+    
 }
+// if ($con->connect_error) {
+//     echo "Ket noi that bai";
+//     die("Connection failed: " . $con->connect_error);
+//   }
+// else {
+//     echo "Ket noi thanh cong";
+// }
 
-$sql = "SELECT ID, IDKH FROM binhluan";
-$result = $con->query($sql);
+// $sql = "SELECT ID, IDKH FROM binhluan";
+// $result = $con->query($sql);
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["ID"]. " - Name: " . $row["IDKH"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
+// if ($result->num_rows > 0) {
+//   // output data of each row
+//   while($row = $result->fetch_assoc()) {
+//     echo "id: " . $row["ID"]. " - Name: " . $row["IDKH"]. "<br>";
+//   }
+// } else {
+//   echo "0 results";
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
