@@ -6,7 +6,7 @@ mysqli_real_connect($con, "mypham-server.mysql.database.azure.com", "gkphkwttoo"
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
-    $Email = $_POST['Email'];
+    $Email = $_POST['email'];
     $pass = $_POST['password'];
     
     $sql = "INSERT INTO account VALUE('$Email','$firstName','$lastName','$pass')";
