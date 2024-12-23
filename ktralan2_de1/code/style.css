@@ -1,0 +1,96 @@
+body{
+    font-family: Tahoma;
+    font-size: 13px;
+}
+#khungngoai{
+    height: 315px;
+    width: 908px;
+    margin: auto;
+    border: 1px solid #e0dfdf;
+}
+#tieude{
+    height: 45px;
+    width: 908px;  
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.ngoai{
+    border-bottom: 1px solid #834d7c;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.ndtd{
+    width: 180px;
+    height: auto;
+    background-color: #834d7c;
+    color: white;
+    padding:10px ;
+    text-align: center;
+}
+img{
+    width: 160px;
+    height: 180px;   
+    padding-top: 3px;
+}
+#gia{
+    color: rgb(238, 43, 43);
+    text-align: center;
+    font-size: 15px;
+}
+#tb{
+    height: 245px;
+    width: 170px;
+    text-align: center;
+    padding-bottom: 6px;
+}
+table,tr,td{
+    border: 1px solid #e0dfdf;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+#nd{
+    border: 1px solid #dbdbdb;
+    width: 160px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+form{
+    width: 500px;   
+    margin-bottom: 50px;    
+}
+
+.dangxuat{
+   text-align: right;
+   margin-top: 15px;
+   margin-right: 40px;
+}
+.btn-nut{
+    border-radius: 0px;
+    background-color: #834d7c;
+    color: white;
+    padding: 8px 25px;
+}
+.btn-nut:hover{
+    background-color: white;
+    color:  #834d7c; 
+    border-color: #834d7c;  
+}
+.edit{
+    justify-content: center;
+    margin-bottom:5px;
+
+}
+.btn-edit{
+    padding: 5px 20px;
+    margin:0px 5px;
+}
+.them{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.GioHang{
+    width: 10px;
+    height: 10px;
+}
