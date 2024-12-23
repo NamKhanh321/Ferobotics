@@ -1,7 +1,7 @@
 <?php
 $con = mysqli_init();
 mysqli_ssl_set($con,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-mysqli_real_connect($con, "mypham-server.mysql.database.azure.com", "gkphkwttoo", "Nam123456", "mypham",3306,NULL,MYSQLI_CLIENT_SSL);
+mysqli_real_connect($con, "mypham-server.mysql.database.azure.com", "gkphkwttoo", "Nam123456", "democloud",3306,NULL,MYSQLI_CLIENT_SSL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = $_POST['firstName'];
@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $sql = "INSERT INTO account VALUE('$Email','$firstName','$lastName','$pass')";
     var_dump($sql);
-    $stmt = $conn->prepare($sql);
+    $stmt = $con->prepare($sql);
     $query = $stmt->execute();
     $message_success = "da tao tai khoan thanh cong!";
     $message_fail = "co loi xay ra!";
